@@ -2,7 +2,6 @@
 #define MAIN_H
 #include <stdlib.h>
 #include <stdarg.h>
-#include <unistd.h>
 
 /**
  * struct flags - struct containing flags to "turn on"
@@ -34,18 +33,7 @@ typedef struct printHandler
 } ph;
 
 /* print character */
-
-/**
- * _putchar - writes the character c to stdout*
- * @c: The character to print
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
+int _putchar(char c);
 
 /* print_nums */
 
